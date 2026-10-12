@@ -1,0 +1,8 @@
+.env
+.venv/
+.venv
+.chroma/
+__pycache__/
+*.pyc
+evals/results/
+.DS_Store
