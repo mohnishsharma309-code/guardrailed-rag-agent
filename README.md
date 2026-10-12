@@ -100,27 +100,4 @@ tests/
   test_guardrails.py  offline unit tests
 ```
 
-## Interview talking points
 
-- "Retrieval is only half the system — every chunk is re-screened for
-  injections and PII *after* retrieval, because untrusted docs are an attack
-  surface, not just context."
-- "Evals are a regression suite, not a vibe check: 10 golden cases covering
-  factuality, refusals, direct and indirect prompt injection, and PII leaks."
-- "The policy layer is deterministic and offline-testable — guardrails
-  shouldn't depend on the same model they're constraining."
-
-## Roadmap
-
-- [ ] LLM-as-judge faithfulness scorer alongside the heuristic checks
-- [ ] Per-tenant policy profiles (blocklist + redaction rules per customer)
-- [ ] Streaming answers + a small Gradio/Streamlit trace viewer
-- [ ] Latency/cost tracking per eval run
-
-## Push to GitHub
-
-```bash
-git remote add origin git@github.com:mohnishsharma309-code/guardrailed-rag-agent.git
-git branch -M main
-git push -u origin main
-```
